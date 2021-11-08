@@ -17,7 +17,7 @@ Takes an `url` and an optional `initial data` and returns 2 parameters:
 2. `data`: The data retrieved from the URL.
 
 This hook uses the **axios** library that needs to be installed first!
-##E Example:
+### Example:
 ```
 const {loading, data} = useFetch(
   "https://jsonplaceholder.typicode.com/posts/"
