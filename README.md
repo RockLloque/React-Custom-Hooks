@@ -10,3 +10,16 @@ Takes an event as a `string` and a handler-function and an optional `element` th
     console.log(`Pressed ${event.keyCode}`);
   });
 ```
+
+## `useFetch`:
+Takes an `url` and an optional `initial data` and returns 2 parameters:
+1. `loading`: Boolean that is set to `true` while loading is not finished.
+2. `data`: The data retrieved from the URL.
+
+This hook uses the **axios** library that needs to be installed first!
+##E Example:
+```
+const {loading, data} = useFetch(
+  "https://jsonplaceholder.typicode.com/posts/"
+);
+```
